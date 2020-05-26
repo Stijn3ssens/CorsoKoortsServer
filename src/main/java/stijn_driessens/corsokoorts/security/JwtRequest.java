@@ -1,9 +1,12 @@
 package stijn_driessens.corsokoorts.security;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.io.Serializable;
 
 public class JwtRequest implements Serializable {
-    private static final long serialVersionUID = 5926468583005150707L;
+//    @Value("${jwtVar.serialVersionUID}")
+    private static long serialVersionUID = 5926468583005150707L;
     private String username;
     private String password;
 

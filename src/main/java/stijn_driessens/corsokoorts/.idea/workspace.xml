@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7a9b4b3-34f7-4b43-83e1-14b439483c01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/security/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/JwtUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CorsoKoorts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CorsoKoorts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CorsoKoortsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CorsoKoortsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/CrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/ICrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ICrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/Corso.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Corso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response/ResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/ResponseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../target/classes/META-INF/CorsoKoorts.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/account-detail/account-detail.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/follow-list/follow-list.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/help/help.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/home/home.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/home/home.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/home/home.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/home/home.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/login/login.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/models/corso.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/models/corso.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/register/register.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/services/corso.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/services/corso.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-account-detail/society-account-detail.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-detail/society-article-detail.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-article-manage/society-article-manage.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-detail/society-detail.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-home/society-home.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-list/society-list.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-list/society-member-list.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-member-request-list/society-member-request-list.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-detail/society-tab-detail.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../CorsoKoortsIonicFrontend/src/app/society-tab-manage/society-tab-manage.page.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="ProjectId" id="1aIcH7ErezfldECDwFDaOLyRlA8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7a9b4b3-34f7-4b43-83e1-14b439483c01" name="Default Changelist" comment="" />
+      <created>1586426457949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586426457949</updated>
+      <workItem from="1586426459378" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586426500948">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586426500948" />
+  </component>
+</project>

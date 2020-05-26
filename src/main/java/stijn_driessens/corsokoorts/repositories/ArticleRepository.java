@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface ArticleRepository extends CrudRepository<Article, Long> {
     @Modifying
-    @Query(value = "SELECT a FROM articles a WHERE a.tabId = :tabId", nativeQuery = true)
+    @Query(value = "SELECT * FROM articles AS a WHERE a.tabId = :tabId", nativeQuery = true)
     List<Article> findAllByTabId(@Param("tabId") long tabId);
 }

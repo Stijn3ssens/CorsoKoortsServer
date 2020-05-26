@@ -32,11 +32,39 @@ public class Article extends BaseEntity {
     @NotNull
     private Date releasedate;
 
-    @Column
+    @Column(name = "follow_releasedate")
     @NotNull
     private Date followReleasedate;
 
-    @Column
+    @Column(name = "member_releasedate")
     @NotNull
     private Date memberReleasedate;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Long getOrganisationId() {
+        return organisationId;
+    }
+
+    public Long getTabId() {
+        return tabId;
+    }
+
+    public Date getReleasedate() {
+        return releasedate;
+    }
+
+    public Date getFollowReleasedate() {
+        return followReleasedate;
+    }
+
+    public Date getMemberReleasedate() {
+        return memberReleasedate;
+    }
 }

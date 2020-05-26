@@ -1,5 +1,6 @@
 package stijn_driessens.corsokoorts.controller;
 
+import org.springframework.security.access.prepost.PostAuthorize;
 import stijn_driessens.corsokoorts.entities.Article;
 import stijn_driessens.corsokoorts.response.Response;
 import stijn_driessens.corsokoorts.response.ResponseGenerator;

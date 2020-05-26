@@ -24,7 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
     @Autowired
-    private UserDetailsService jwtUserDetailsService;
+    private JwtUserDetailsService jwtUserDetailsService;
     @Autowired
     private JwtRequestFilter jwtRequestFilter;
 
@@ -57,7 +57,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("*").allowedHeaders("*");
+                registry.addMapping("/**").allowedOrigins("*").allowedHeaders("*")
+//                        .allowCredentials(true)
+                ;
             }
         };
     }
@@ -65,16 +67,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         // We don't need CSRF for this example
-        httpSecurity.csrf().disable()
+        httpSecurity.cors().and().csrf().disable()
                 .authorizeRequests().antMatchers().denyAll()
                 // authorize url
-                .and().authorizeRequests().antMatchers("/account/login").permitAll()
-                .and().authorizeRequests().antMatchers("/account/me").authenticated()
-                .and().authorizeRequests().antMatchers("/account/sign-up").permitAll()
-                .and().authorizeRequests().antMatchers("/api/corso/").permitAll()
-                .and().authorizeRequests().antMatchers("/api/buurtschap/").permitAll()
-                .and().authorizeRequests().antMatchers("/api/article/").permitAll()
+                .and().authorizeRequests().antMatchers("/account/login").anonymous()
+//                .and().authorizeRequests().antMatchers("/account/me").authenticated()
+                .and().authorizeRequests().antMatchers("/account/sign-up").anonymous()
+//                .and().authorizeRequests().antMatchers("/api/corso/").permitAll()
+//                .and().authorizeRequests().antMatchers("/api/buurtschap/").permitAll()
                 // all other requests need to be authenticated
+                //TODO : Authenticate!!!
                 .anyRequest().authenticated().and()
                 // make sure we use stateless session; session won't be used to
                 // store user's state.
