@@ -23,9 +23,9 @@ public class ArticleController extends CrudController<Article> {
         this.service = service;
     }
 
-    @GetMapping("/getallbytabid/{tabId}")
-    public Response<Article> getAllByTabId(HttpServletRequest request, @PathVariable Long tabId) {
-        List<Article> result = service.getAllByTabId(tabId);
+    @GetMapping("/getallbytabid/{societyId}/{tabId}")
+    public Response<Article> getAllByTabId(HttpServletRequest request, @PathVariable Long societyId, @PathVariable Long tabId) {
+        List<Article> result = service.getAllByTabId(societyId, tabId);
         return new ResponseGenerator<Article>().generateResponse(result, "Could not find the ID...");
     }
 }

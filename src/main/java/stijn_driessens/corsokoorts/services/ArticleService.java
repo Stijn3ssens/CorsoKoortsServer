@@ -15,7 +15,7 @@ public class ArticleService extends CrudService<Article, Long> {
         this.repos = repos;
     }
 
-    public List<Article> getAllByTabId(long tabId) {
-        return repos.findAllByTabId(tabId);
+    public List<Article> getAllByTabId(long societyId, long tabId) {
+        return repos.findAllByTabId(societyId, tabId);
     }
 }

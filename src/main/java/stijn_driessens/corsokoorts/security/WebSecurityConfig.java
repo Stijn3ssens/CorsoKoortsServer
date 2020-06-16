@@ -73,6 +73,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().authorizeRequests().antMatchers("/account/login").anonymous()
 //                .and().authorizeRequests().antMatchers("/account/me").authenticated()
                 .and().authorizeRequests().antMatchers("/account/sign-up").anonymous()
+                .and().authorizeRequests().antMatchers("/swagger-ui.html").anonymous()
 //                .and().authorizeRequests().antMatchers("/api/corso/").permitAll()
 //                .and().authorizeRequests().antMatchers("/api/buurtschap/").permitAll()
                 // all other requests need to be authenticated

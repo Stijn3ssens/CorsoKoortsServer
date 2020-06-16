@@ -9,7 +9,7 @@
         <module name="CorsoKoorts" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="CorsoKoorts" target="11" />
     </bytecodeTargetLevel>
   </component>
