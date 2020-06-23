@@ -24,7 +24,7 @@ public abstract class FrontendTests {
 
     @Test
     public void ionicPage() {
-        Assertions.assertEquals("Ionic App", driver.getTitle());
+        Assertions.assertEquals("CorsoKoorts", driver.getTitle());
     }
 
     protected void getTitleOfPage(String expectedTitle) {
